@@ -1,0 +1,22 @@
+{
+    "products":[
+        {
+            "ProductName":"Hawai Mobile Phone",
+            "ProductPrice":"5000",
+            "ProductDescp":"This is a smartphone",
+            "ImageURL":"http://img.pricetree.com/large/20131223/huawei-honor-3c-mobile.jpg"
+        },
+        {
+            "ProductName":"iPhone7 Mobile Phone",
+            "ProductPrice":"55000",
+            "ProductDescp":"This is an apple smartphone",
+            "ImageURL":"https://propakistani.pk/prices/wp-content/uploads/2016/10/iPhone-7.jpg"
+        },
+        {
+            "ProductName":"Samsung Camera",
+            "ProductPrice":"65000",
+            "ProductDescp":"This is a Digital Camera",
+            "ImageURL":"https://petapixel.com/assets/uploads/2014/09/nx300m_1.jpg"
+        }
+    ]
+}

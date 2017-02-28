@@ -1,0 +1,43 @@
+<h2>Register</h2>
+ <form ng-controller = "registerCtrl as rc">
+ <div class="form-group">
+    <label>Name</label>
+    <input ng-model="rc.user.name" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Gender</label>
+    <input ng-model="rc.user.gender" type="radio" value="M"  placeholder="Email"> Male
+    <input ng-model="rc.user.gender" type="radio" value="F"  placeholder="Email"> Female
+  </div>
+  <div class="form-group">
+    <label>Phone</label>
+    <input ng-model="rc.user.phone" cm-number-only maxnumber="10" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>DOB</label>
+    <input ng-model="rc.user.dob" cm-date-picker mindate="-20" maxdate="30"  type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Country</label>
+    <select ng-model="rc.user.country" class="form-control" ng-options="c.name for c in rc.country">
+     <option value="">Choose Country</option>
+      </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input ng-model="rc.user.email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input ng-model="rc.user.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  
+  <div class="checkbox">
+    <label>
+      <input ng-model="rc.user.chkbtn" type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" ng-class="{disabled:rc.user.chkbtn == false}" ng-model="rc.regbtn" ng-click="rc.register()" class="btn btn-default disabled">Register</button>
+  
+  <h2>{{rc.user}}</h2>
+</form>
